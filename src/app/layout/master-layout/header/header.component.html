@@ -1,0 +1,27 @@
+<nav class="hs-navbar">
+  <img
+    src="assets/suw-logos/header-logo-with-icon.svg"
+    class="hs-brand"
+    data-cy="suwLogo"
+  />
+  <div class="navbar-actions">
+    <ng-template>
+      <button
+        class="button-primary-outline"
+        id="reportIssue "
+        data-cy="reportIssue"
+      >
+        Report Issue
+      </button>
+    </ng-template>
+    <button
+      class="button-primary-outline"
+      id="logoutButton "
+      *ngIf="isAuthenticated$ | async"
+      data-cy="logoutButton "
+      (click)="logout()"
+    >
+      Logout
+    </button>
+  </div>
+</nav>
