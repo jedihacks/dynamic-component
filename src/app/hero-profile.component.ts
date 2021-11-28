@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 
-import { LayoutComponentInterface } from './layout.component.interface';
+import { LayoutComponentInterface } from './layout/layout.component.interface';
 
 @Component({
   template: `

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { AdService } from './ad.service';
-import { LayoutItem } from './layout-item.class';
+import { LayoutItem } from './layout/layout-item.class';
 
 @Component({
   selector: 'app-root',

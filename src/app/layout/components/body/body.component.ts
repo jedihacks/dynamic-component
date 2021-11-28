@@ -1,8 +1,8 @@
 import { Component, Input, OnDestroy, OnInit, ViewChild } from '@angular/core';
 
-import { LayoutDirective } from '../../../layout.directive';
-import { LayoutItem } from '../../../layout-item.class';
-import { LayoutComponentInterface } from '../../../layout.component.interface';
+import { LayoutDirective } from '../../layout.directive';
+import { LayoutItem } from '../../layout-item.class';
+import { LayoutComponentInterface } from '../../layout.component.interface';
 @Component({
   selector: 'app-body',
   templateUrl: './body.component.html',
