@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { HeroJobAdComponent } from './hero-job-ad.component';
-import { BodyPanelComponent } from './ad-banner.component';
+import { BodyPanelComponent } from './body.component';
 import { HeroProfileComponent } from './hero-profile.component';
 import { AdDirective } from './ad.directive';
 import { AdService } from './ad.service';
