@@ -18,7 +18,6 @@ export class BodyPanelComponent implements OnInit, OnDestroy {
 
   ngOnInit() {
     this.loadComponent();
-    this.getAds();
   }
 
   ngOnDestroy() {
@@ -34,12 +33,6 @@ export class BodyPanelComponent implements OnInit, OnDestroy {
 
     const componentRef = viewContainerRef.createComponent<LayoutComponentInterface>(LayoutItem.component);
     componentRef.instance.data = LayoutItem.data;
-  }
-
-  getAds() {
-    this.interval = setInterval(() => {
-      this.loadComponent();
-    }, 3000);
   }
 }
 

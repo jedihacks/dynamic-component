@@ -12,10 +12,10 @@ export class LayoutService {
         ModuleLayoutComponent,
         { name: 'Module Layout', bio: 'Brave as they come' }
       ),
-      new LayoutItem(
-        PortalLayoutComponent,
-        { headline: 'Portal Layout', body: 'Submit your resume today!' }
-      )
+      // new LayoutItem(
+      //   PortalLayoutComponent,
+      //   { headline: 'Portal Layout', body: 'Submit your resume today!' }
+      // )
     ];
   }
 }
