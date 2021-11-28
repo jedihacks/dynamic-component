@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { HeroJobAdComponent } from './hero-job-ad.component';
-import { AdBannerComponent } from './ad-banner.component';
+import { BodyPanelComponent } from './ad-banner.component';
 import { HeroProfileComponent } from './hero-profile.component';
 import { AdDirective } from './ad.directive';
 import { AdService } from './ad.service';
@@ -12,7 +12,7 @@ import { AdService } from './ad.service';
   providers: [ AdService ],
   declarations: [
     AppComponent,
-    AdBannerComponent,
+    BodyPanelComponent,
     HeroJobAdComponent,
     HeroProfileComponent,
     AdDirective

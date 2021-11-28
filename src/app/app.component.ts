@@ -1,14 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 
 import { AdService } from './ad.service';
-import { AdItem } from './ad-item';
+import { LayoutItem } from './ad-item';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html'  
 })
 export class AppComponent implements OnInit {
-  ads: AdItem[] = [];
+  ads: LayoutItem[] = [];
 
   constructor(private adService: AdService) {}
 

@@ -1,24 +1,24 @@
 import { Component, Input, OnDestroy, OnInit, ViewChild } from '@angular/core';
 
 import { AdDirective } from './ad.directive';
-import { AdItem } from './ad-item';
+import { LayoutItem } from './ad-item';
 import { AdComponent } from './ad.component';
 
 @Component({
-  selector: 'app-ad-banner',
+  selector: 'app-body',
   template: `
     <div class="ad-banner-example">
       <h3>Advertisements</h3>
-      <ng-template adHost></ng-template>
+      <ng-template layoutHost></ng-template>
     </div>
   `
 })
-export class AdBannerComponent implements OnInit, OnDestroy {
-  @Input() ads: AdItem[] = [];
+export class BodyPanelComponent implements OnInit, OnDestroy {
+  @Input() ads: LayoutItem[] = [];
 
   currentAdIndex = -1;
 
-  @ViewChild(AdDirective, {static: true}) adHost!: AdDirective;
+  @ViewChild(AdDirective, {static: true}) layoutHost!: AdDirective;
   interval: number|undefined;
 
   ngOnInit() {
@@ -32,13 +32,13 @@ export class AdBannerComponent implements OnInit, OnDestroy {
 
   loadComponent() {
     this.currentAdIndex = (this.currentAdIndex + 1) % this.ads.length;
-    const adItem = this.ads[this.currentAdIndex];
+    const LayoutItem = this.ads[this.currentAdIndex];
 
-    const viewContainerRef = this.adHost.viewContainerRef;
+    const viewContainerRef = this.layoutHost.viewContainerRef;
     viewContainerRef.clear();
 
-    const componentRef = viewContainerRef.createComponent<AdComponent>(adItem.component);
-    componentRef.instance.data = adItem.data;
+    const componentRef = viewContainerRef.createComponent<AdComponent>(LayoutItem.component);
+    componentRef.instance.data = LayoutItem.data;
   }
 
   getAds() {

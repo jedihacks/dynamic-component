@@ -1,6 +1,6 @@
 import { Type } from '@angular/core';
 
-export class AdItem {
+export class LayoutItem {
   constructor(public component: Type<any>, public data: any) {}
 }
 
