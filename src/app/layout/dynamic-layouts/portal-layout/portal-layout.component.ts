@@ -1,15 +1,10 @@
 import { Component, Input } from '@angular/core';
 
 import { LayoutComponentInterface } from '../../layout.component.interface';
-
 @Component({
-  template: `
-    <div class="job-ad">
-      Portal Layout Component
-      <h4>{{data.headline}}</h4>
-      {{data.body}}
-    </div>
-  `
+  selector: 'portal-layout',
+  templateUrl: './portal-layout.component.html',
+  styleUrls: ['./portal-layout.component.scss'],
 })
 export class PortalLayoutComponent implements LayoutComponentInterface {
   @Input() data: any;
