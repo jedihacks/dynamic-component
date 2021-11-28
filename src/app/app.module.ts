@@ -2,12 +2,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { HeroJobAdComponent } from './hero-job-ad.component';
-import { BodyPanelComponent } from './layout/components/body/body.component';
+import { BodyPanelComponent } from './layout/master/body/body.component';
 import { HeroProfileComponent } from './hero-profile.component';
 import { LayoutDirective } from './layout/layout.directive';
 import { AdService } from './ad.service';
-import { FooterComponent } from './layout/components/footer/footer.component';
-import { HeaderComponent } from './layout/components/header/header.component';
+import { FooterComponent } from './layout/master/footer/footer.component';
+import { HeaderComponent } from './layout/master/header/header.component';
 
 @NgModule({
   imports: [ BrowserModule ],
