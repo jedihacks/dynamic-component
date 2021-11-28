@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 
-import { HeroJobAdComponent } from './hero-job-ad.component';
-import { HeroProfileComponent } from './hero-profile.component';
+import { HeroJobAdComponent } from './layout/dynamic-layouts/portal-layout/hero-job-ad.component';
+import { HeroProfileComponent } from './layout/dynamic-layouts/module-layout/hero-profile.component';
 import { LayoutItem } from './layout/layout-item.class';
 
 @Injectable()
