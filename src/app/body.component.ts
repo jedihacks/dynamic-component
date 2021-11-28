@@ -1,8 +1,8 @@
 import { Component, Input, OnDestroy, OnInit, ViewChild } from '@angular/core';
 
-import { LayoutDirective } from './ad.directive';
+import { LayoutDirective } from './layout.directive';
 import { LayoutItem } from './layout-item.class';
-import { AdComponent } from './ad.component';
+import { LayoutComponentInterface } from './layout.component.interface';
 
 @Component({
   selector: 'app-body',
@@ -37,7 +37,7 @@ export class BodyPanelComponent implements OnInit, OnDestroy {
     const viewContainerRef = this.layoutHost.viewContainerRef;
     viewContainerRef.clear();
 
-    const componentRef = viewContainerRef.createComponent<AdComponent>(LayoutItem.component);
+    const componentRef = viewContainerRef.createComponent<LayoutComponentInterface>(LayoutItem.component);
     componentRef.instance.data = LayoutItem.data;
   }
 

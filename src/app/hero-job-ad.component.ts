@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 
-import { AdComponent } from './ad.component';
+import { LayoutComponentInterface } from './layout.component.interface';
 
 @Component({
   template: `
@@ -10,7 +10,7 @@ import { AdComponent } from './ad.component';
     </div>
   `
 })
-export class HeroJobAdComponent implements AdComponent {
+export class HeroJobAdComponent implements LayoutComponentInterface {
   @Input() data: any;
 }
 

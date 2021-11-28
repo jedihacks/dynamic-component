@@ -1,4 +1,4 @@
-export interface AdComponent {
+export interface LayoutComponentInterface {
   data: any;
 }
 
