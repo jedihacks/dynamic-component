@@ -3,16 +3,9 @@ import { Component, Input } from '@angular/core';
 import { LayoutComponentInterface } from '../../layout.component.interface';
 
 @Component({
-  template: `
-    <div class="hero-profile">
-      <h3>Module Layout</h3>
-      <h4>{{data.name}}</h4>
-
-      <p>{{data.bio}}</p>
-
-      <strong>Hire this hero today!</strong>
-    </div>
-  `
+  selector: 'module-layout',
+  templateUrl: './module-layout.component.html',
+  styleUrls: ['./module-layout.component.scss'],
 })
 export class ModuleLayoutComponent implements LayoutComponentInterface {
   @Input() data: any;
