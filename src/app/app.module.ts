@@ -1,9 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
-import { HeroJobAdComponent } from './layout/dynamic-layouts/portal-layout/hero-job-ad.component';
+import { PortalLayoutComponent } from './layout/dynamic-layouts/portal-layout/portal-layout.component';
 import { BodyPanelComponent } from './layout/master/body/body.component';
-import { HeroProfileComponent } from './layout/dynamic-layouts/module-layout/hero-profile.component';
+import { ModuleLayoutComponent } from './layout/dynamic-layouts/module-layout/module-layout.component';
 import { LayoutDirective } from './layout/layout.directive';
 import { AdService } from './ad.service';
 import { FooterComponent } from './layout/master/footer/footer.component';
@@ -17,13 +17,13 @@ import { HeaderComponent } from './layout/master/header/header.component';
     FooterComponent,
     HeaderComponent,
     BodyPanelComponent,
-    HeroJobAdComponent,
-    HeroProfileComponent,
+    PortalLayoutComponent,
+    ModuleLayoutComponent,
     LayoutDirective
   ],
   entryComponents: [
-    HeroJobAdComponent,
-    HeroProfileComponent
+    PortalLayoutComponent,
+    ModuleLayoutComponent
   ],
   bootstrap: [ AppComponent ]
 })
