@@ -8,12 +8,12 @@ import { LayoutItem } from './layout/layout-item.class';
   templateUrl: './app.component.html'  
 })
 export class AppComponent implements OnInit {
-  ads: LayoutItem[] = [];
+  layouts: LayoutItem[] = [];
 
   constructor(private LayoutService: LayoutService) {}
 
   ngOnInit() {
-    this.ads = this.LayoutService.getAds();
+    this.layouts = this.LayoutService.getAds();
   }
 }
 

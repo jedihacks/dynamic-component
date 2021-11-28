@@ -9,7 +9,7 @@ import { LayoutComponentInterface } from '../../layout.component.interface';
   styleUrls: ['./body.component.scss'],
 })
 export class BodyPanelComponent implements OnInit, OnDestroy {
-  @Input() ads: LayoutItem[] = [];
+  @Input() layouts: LayoutItem[] = [];
 
   currentAdIndex = -1;
 
@@ -26,8 +26,8 @@ export class BodyPanelComponent implements OnInit, OnDestroy {
   }
 
   loadComponent() {
-    this.currentAdIndex = (this.currentAdIndex + 1) % this.ads.length;
-    const LayoutItem = this.ads[this.currentAdIndex];
+    this.currentAdIndex = (this.currentAdIndex + 1) % this.layouts.length;
+    const LayoutItem = this.layouts[this.currentAdIndex];
 
     const viewContainerRef = this.layoutHost.viewContainerRef;
     viewContainerRef.clear();
