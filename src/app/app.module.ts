@@ -5,13 +5,13 @@ import { PortalLayoutComponent } from './layout/dynamic-layouts/portal-layout/po
 import { BodyPanelComponent } from './layout/master/body/body.component';
 import { ModuleLayoutComponent } from './layout/dynamic-layouts/module-layout/module-layout.component';
 import { LayoutDirective } from './layout/layout.directive';
-import { AdService } from './ad.service';
+import { LayoutService } from './layout/layout.service';
 import { FooterComponent } from './layout/master/footer/footer.component';
 import { HeaderComponent } from './layout/master/header/header.component';
 
 @NgModule({
   imports: [ BrowserModule ],
-  providers: [ AdService ],
+  providers: [ LayoutService ],
   declarations: [
     AppComponent,
     FooterComponent,

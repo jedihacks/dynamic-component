@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { AdService } from './ad.service';
+import { LayoutService } from './layout/layout.service';
 import { LayoutItem } from './layout/layout-item.class';
 
 @Component({
@@ -10,10 +10,10 @@ import { LayoutItem } from './layout/layout-item.class';
 export class AppComponent implements OnInit {
   ads: LayoutItem[] = [];
 
-  constructor(private adService: AdService) {}
+  constructor(private LayoutService: LayoutService) {}
 
   ngOnInit() {
-    this.ads = this.adService.getAds();
+    this.ads = this.LayoutService.getAds();
   }
 }
 
