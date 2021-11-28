@@ -1,6 +1,6 @@
 import { Component, Input, OnDestroy, OnInit, ViewChild } from '@angular/core';
 
-import { AdDirective } from './ad.directive';
+import { LayoutDirective } from './ad.directive';
 import { LayoutItem } from './layout-item.class';
 import { AdComponent } from './ad.component';
 
@@ -18,7 +18,7 @@ export class BodyPanelComponent implements OnInit, OnDestroy {
 
   currentAdIndex = -1;
 
-  @ViewChild(AdDirective, {static: true}) layoutHost!: AdDirective;
+  @ViewChild(LayoutDirective, {static: true}) layoutHost!: LayoutDirective;
   interval: number|undefined;
 
   ngOnInit() {

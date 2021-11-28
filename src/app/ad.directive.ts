@@ -4,7 +4,7 @@ import { Directive, ViewContainerRef } from '@angular/core';
 @Directive({
   selector: '[layoutHost]',
 })
-export class AdDirective {
+export class LayoutDirective {
   constructor(public viewContainerRef: ViewContainerRef) { }
 }
 

@@ -4,7 +4,7 @@ import { AppComponent } from './app.component';
 import { HeroJobAdComponent } from './hero-job-ad.component';
 import { BodyPanelComponent } from './body.component';
 import { HeroProfileComponent } from './hero-profile.component';
-import { AdDirective } from './ad.directive';
+import { LayoutDirective } from './ad.directive';
 import { AdService } from './ad.service';
 
 @NgModule({
@@ -15,7 +15,7 @@ import { AdService } from './ad.service';
     BodyPanelComponent,
     HeroJobAdComponent,
     HeroProfileComponent,
-    AdDirective
+    LayoutDirective
   ],
   entryComponents: [
     HeroJobAdComponent,
