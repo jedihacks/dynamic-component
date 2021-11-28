@@ -13,7 +13,7 @@ export class AppComponent implements OnInit {
   constructor(private LayoutService: LayoutService) {}
 
   ngOnInit() {
-    this.layouts = this.LayoutService.getAds();
+    this.layouts = this.LayoutService.getLayouts();
   }
 }
 

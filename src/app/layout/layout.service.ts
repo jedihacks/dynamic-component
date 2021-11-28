@@ -6,16 +6,16 @@ import { LayoutItem } from './layout-item.class';
 
 @Injectable()
 export class LayoutService {
-  getAds() {
+  getLayouts() {
     return [
-      new LayoutItem(
-        ModuleLayoutComponent,
-        { name: 'Module Layout', bio: 'Brave as they come' }
-      ),
       // new LayoutItem(
-      //   PortalLayoutComponent,
-      //   { headline: 'Portal Layout', body: 'Submit your resume today!' }
-      // )
+      //   ModuleLayoutComponent,
+      //   { name: 'Module Layout', bio: 'Brave as they come' }
+      // ),
+      new LayoutItem(
+        PortalLayoutComponent,
+        { headline: 'Portal Layout', body: 'Submit your resume today!' }
+      )
     ];
   }
 }
