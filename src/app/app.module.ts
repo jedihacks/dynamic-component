@@ -2,16 +2,20 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { HeroJobAdComponent } from './hero-job-ad.component';
-import { BodyPanelComponent } from './body.component';
+import { BodyPanelComponent } from './layout/master-layout/body-panel/body.component';
 import { HeroProfileComponent } from './hero-profile.component';
 import { LayoutDirective } from './layout.directive';
 import { AdService } from './ad.service';
+import { FooterComponent } from './layout/master-layout/footer/footer.component';
+import { HeaderComponent } from './layout/master-layout/header/header.component';
 
 @NgModule({
   imports: [ BrowserModule ],
   providers: [ AdService ],
   declarations: [
     AppComponent,
+    FooterComponent,
+    HeaderComponent,
     BodyPanelComponent,
     HeroJobAdComponent,
     HeroProfileComponent,
